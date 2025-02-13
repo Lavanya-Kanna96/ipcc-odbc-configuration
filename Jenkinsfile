@@ -12,10 +12,10 @@ pipeline {
       username = "admin"
       
       # AWS Secrets Manager Secret Name -- Subject to Change 
-      mysecret = "rds!db-350ee583-4aff-4b83-b828-55601f8a50f3"
+      mysecret = "rds!db-28501e07-3e79-4f87-8565-24ec011a3008"
 
       # AWS Region Code -- Subject to Change
-      aws_region = 'ap-southeast-1'
+      aws_region = 'us-east-2'
       
       fpath="${WORKSPACE}"
       dsn = "asterisk-ipcc-db"
@@ -34,7 +34,7 @@ pipeline {
       stage('SCM Checkout') {
             steps {
                 
-                git branch: 'main', url: 'https://github.com/sarbajitD-24/ipcc-odbc-configuration.git'
+                git branch: 'main', url: 'https://github.com/Lavanya-Kanna96/ipcc-odbc-configuration.git'
                 
             }
         }
